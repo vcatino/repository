@@ -5,11 +5,11 @@ backup: cold
 codenotary: codenotary@frenck.dev
 description: Manage your UniFi network using a web browser
 hassio_api: true
-image: ghcr.io/hassio-addons/unifi/{arch}
+image: ghcr.io/vcatino/unifi/{arch}
 init: false
 map:
 - backup:rw
-name: UniFi Network Application
+name: UniFi Network Application V
 ports:
   10001/udp: 10001
   161/udp: null
@@ -38,6 +38,6 @@ schema:
   memory_max: int?
 slug: unifi
 startup: services
-url: https://github.com/hassio-addons/addon-unifi
-version: 2.1.0
+url: https://github.com/vcatino/addon-unifi
+version: 2.1.0b
 webui: https://[HOST]:[PORT:8443]
